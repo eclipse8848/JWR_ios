@@ -14,10 +14,28 @@
 @property id sex;
 @property id age;
 
--(id)walk;
--(id)run;
--(id)sleep;
--(id)eat;
--(id)speak;
+- (id)walk;
+- (id)run;
+- (id)runTo:(id)direction bySpeed:(id)speed;
+
+
+- (id)sleep;
+- (id)sleepAt:(id)where when:(id)when;
+
+
+- (id)speak:(id)language;
+- (id)speakTo:(id)someone topic:(id)topic language:(id)language;
+
+
+- (id)drink:(id)type;
+- (id)eat:(id)food;
+- (id)smell:(id)what;
+
+
+- (id)think:(id)what;
+- (id)study:(id)subject;
+- (id)make:(id)what;
+
+
 
 @end

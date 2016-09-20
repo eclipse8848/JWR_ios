@@ -19,36 +19,31 @@ int main(int argc, const char * argv[]) {
     me.name = @"jeongwoo";
     me.sex = @"male";
     me.age = @"32";
+    //메서드를 호출한다 or 메시지를 보낸다.
+    [me run];
+    [me walk];
+    [me sleep];
+    //매서드와 매개변수 호출
+    [me eat:@"사과"];
+    [me speak:@"영어"];
+    [me drink:@"콜라"];
     
     Person *you = [[Person alloc] init];
-    you.name = @"yagom";
-    you.sex = @"male";
-    you.age = @"15";
+    you.name = @"lion";
+    [me eat:you.name];
     
     Person *she = [[Person alloc] init];
     she.name = @"jenny";
     she.sex = @"female";
     she.age = @"22";
+    [me runTo:she bySpeed:@"40"];
+    [me runTo:she.name bySpeed:@"100"];
+    [me speakTo:she.name topic:@"컴퓨터" language:@"한국"];
     
-    Person *he = [[Person alloc] init];
-    he.name = @"allen";
-    he.sex = @"male";
-    he.age = @"14";
-    
-    
-    
-    Warrior *jack = [[Warrior alloc] init];
-    jack.health = @"300";
-    jack.mana = @"10";
-    jack.physicalPower = @"30";
-    jack.magicalPower = @"10";
-    
-    
-    Wizard *rose = [[Wizard alloc] init];
-    rose.health = @"10000";
-    rose.mana = @"150000";
-    rose.physicalPower = @"10";
-    rose.magicalPower = @"350000";
+    [she make:@"나무로보트"];
+    [she sleepAt:@"침대" when:@"저녁10"];
+    [me think:she.name];
+    [she smell:me.name];
     
     
     
@@ -57,15 +52,21 @@ int main(int argc, const char * argv[]) {
     NSLog(@"Her name is %@, sex: %@", she.name, she.sex);
     NSLog(@"Her age is %@", she.age);
     
+    //프로퍼티 값을 변경후 가져와본다.
     she.age = @"25";
     NSLog(@"Her age is %@", she.age);
     NSLog(@"\nHer name is %@ \nsex: %@ \nage: %@", she.name, she.sex, she.age);
     
-    me.age = she.age;
-    NSLog(@"\nMy name is %@ \nsex: %@ \nage: %@", me.name, me.sex, me.age);
     
-    NSLog(@"Your name is %@  sex: %@  age: %@", you.name, you.sex, you.age);
+    //객체에게 이런이런 일을 해달라 명령함.
+    [she sleep];
+    [she walk];
+    [she run];
     
+    //객체끼리의 상호작용
+    [me runTo:she bySpeed:@"35"];
+
     
+
     return 0;
 }
