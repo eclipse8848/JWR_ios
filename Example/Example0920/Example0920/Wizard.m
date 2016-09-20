@@ -9,23 +9,19 @@
 #import "Wizard.h"
 
 @implementation Wizard
-- (id) attack {
-    NSLog(@"마법사가 공격합니다.");
+
+- (id) windStorm:(id)to {
+    NSLog(@"%@에게 윈드스톰을 가합니다.", to);
+    return nil;
+}
+- (id) magicalAttack:(id)to {
+    NSLog(@"%@에게 마법공격을 가합니다.",to);
+    return nil;
+}
+- (id) heal:(id)to howmuch:(id)point {
+    NSLog(@"%@를 %@포인트 만큼 치유해 줍니다.", to, point);
     return nil;
 }
 
-- (id) stop {
-    NSLog(@"마법사가 정지합니다.");
-    return nil;
-}
 
-- (id) move {
-    NSLog(@"마법사가 이동합니다.");
-    return nil;
-}
-
-- (id) hold {
-    NSLog(@"마법사가 제자리멈춤!");
-    return nil;
-}
 @end

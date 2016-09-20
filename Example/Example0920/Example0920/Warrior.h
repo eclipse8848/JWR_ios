@@ -7,29 +7,35 @@
 //
 
 #import <Foundation/Foundation.h>
-
+/**
+ * 근접 싸움꾼 입니다.
+ * 물리공격력이 높고 마법공격력이 낮습니다.
+ * 전사가 가진 능력은 또 뭐가 있을까
+ * @author jwr
+ * @version 0.1
+ */
 @interface Warrior : NSObject
 
-
-//캐릭터의 체력 수치를 나타낸다.
 @property id health;
-//캐릭터의 마나 수치를 나타낸다.
 @property id mana;
-//캐릭터의 물리공격 수치를 나타낸다.
 @property id physicalPower;
-//캐릭터의 마법공격 수치를 나타낸다.
 @property id magicalPower;
-//캐릭터의 무기 상태를 나타낸다.
-@property id weapon;
 
-
-//이동
--(id)move;
-//모든행동 정지
--(id)stop;
-//움직임만 정지(제자리 공격 가능)
--(id)hold;
-//공격
--(id)attack;
+/**
+ * to에게 물리공격을 가합니다.
+ * @param to 공격을 당할 대상
+ * @return 반환은 나중에 배웁니다.
+ * @author jwr
+ * @version 0.1
+ */
+- (id)physicalAttack:(id)to;
+/**
+ * to에게 점프합니다.
+ * @param to 점프 목적대상
+ * @return 반환은 나중에 배웁니다.
+ * @author jwr
+ * @version 0.1
+ */
+- (id)jump:(id)to;
 
 @end

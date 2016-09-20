@@ -9,25 +9,14 @@
 #import "Warrior.h"
 
 @implementation Warrior
-- (id) move {
-    NSLog(@"전사가 이동합니다.");
+
+- (id) physicalAttack:(id)to {
+    NSLog(@"%@에게 물리공격을 가합니다.", to);
     return nil;
 }
-
-- (id) stop {
-    NSLog(@"전사가 멈춥니다.");
+- (id) jump:(id)to {
+    NSLog(@"%@에게로 점프 합니다.", to);
     return nil;
 }
-
-- (id) attack {
-    NSLog(@"전사가 공격합니다.");
-    return nil;
-}
-
-- (id) hold {
-    NSLog(@"전사가 제자리멈춤!");
-    return nil;
-}
-
 
 @end

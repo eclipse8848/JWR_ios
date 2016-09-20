@@ -39,6 +39,7 @@ int main(int argc, const char * argv[]) {
     [me runTo:she bySpeed:@"40"];
     [me runTo:she.name bySpeed:@"100"];
     [me speakTo:she.name topic:@"컴퓨터" language:@"한국"];
+    [me speakTo:she.name topic:@"요리" language:@"스페인"];
     
     [she make:@"나무로보트"];
     [she sleepAt:@"침대" when:@"저녁10"];
@@ -64,8 +65,39 @@ int main(int argc, const char * argv[]) {
     [she run];
     
     //객체끼리의 상호작용
-    [me runTo:she bySpeed:@"35"];
-
+    [me runTo:she.name bySpeed:@"35"];
+    
+    //Wizard클래스 프로퍼티값 정의
+    Wizard *lego = [[Wizard alloc] init];
+    lego.health = @"100";
+    lego.mana = @"350";
+    lego.physicalPower = @"20";
+    lego.magicalPower = @"1000";
+    
+    //Wizard클래스 객체의 프로퍼티 값 확인
+    NSLog(@"lego's health: %@ \nlego's mana: %@ \nlego's physicalPower: %@ \nlego's magicalPower: %@",
+          lego.health, lego.mana, lego.physicalPower, lego.magicalPower);
+    
+    //Wizard 클래스에서 생성된 객체의 매서드 호출 및 매개변수 값을 더한 메소드 호출
+    [lego windStorm:she.name];
+    [lego magicalAttack:@"영수"];
+    [lego heal:me.name howmuch:@"750"];
+    
+    Warrior *jacks = [[Warrior alloc] init];
+    jacks.health = @"500";
+    jacks.mana = @"30";
+    jacks.physicalPower = @"1500";
+    jacks.magicalPower = @"50";
+    
+    NSLog(@"jacks's health: %@ \n mana: %@ \n physicalPower: %@ \n magicalPower: %@",
+          jacks.health, jacks.mana, jacks.physicalPower, jacks.magicalPower);
+    
+    //Wizard 클래스에서 생성된 객체와 Warrior 클래스에서 생성된 객체 간의 상호작용
+    [lego windStorm:jacks];
+    [jacks jump:lego];
+    [jacks physicalAttack:lego];
+    
+    
     
 
     return 0;

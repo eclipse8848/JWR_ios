@@ -14,11 +14,9 @@
 @property id mana;
 @property id physicalPower;
 @property id magicalPower;
-@property id weapon;
 
--(id)move;
--(id)stop;
--(id)hold;
--(id)attack;
+- (id)windStorm:(id)to;
+- (id)magicalAttack:(id)to;
+- (id)heal:(id)to howmuch:(id)point;
 
 @end
