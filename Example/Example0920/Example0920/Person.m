@@ -29,4 +29,9 @@
     return nil;
 }
 
+- (id)speak {
+    NSLog(@"말을 합니다.");
+    return nil;
+}
+
 @end

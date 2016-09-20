@@ -18,5 +18,6 @@
 -(id)run;
 -(id)sleep;
 -(id)eat;
+-(id)speak;
 
 @end
