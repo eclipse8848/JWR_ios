@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class Wizard;
 @interface Warrior : NSObject
 
 //reference type 이므로 * 붙여줘야합니다.(NSString)
@@ -17,10 +17,13 @@
 @property NSInteger mana;
 @property NSUInteger physicalPower;
 @property NSUInteger magicalPower;
+@property NSString *location;
 @property BOOL isAlive;
 
--(id) leafAttack;
--(id) wheelWind;
 
+// parameter type change id -> Wizard *
+- (id)physicalAttackTo:(Wizard *)someCharacter;
+- (id)magicalAttackTo:(Wizard *)someCharacter;
+- (id)jumpTo:(NSString *)someWhere;
 
 @end

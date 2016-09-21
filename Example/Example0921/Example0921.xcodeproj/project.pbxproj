@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F50BD6F1D92690200229AD0 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50BD6E1D92690200229AD0 /* Cat.m */; };
 		8FBF46111D92164B006785FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF46101D92164B006785FA /* main.m */; };
 		8FBF46191D9220A8006785FA /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF46181D9220A8006785FA /* Warrior.m */; };
 		8FBF461C1D9221EC006785FA /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF461B1D9221EC006785FA /* Wizard.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F50BD6D1D92690200229AD0 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		8F50BD6E1D92690200229AD0 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		8FBF460D1D92164B006785FA /* Example0921 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Example0921; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF46101D92164B006785FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FBF46171D9220A8006785FA /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				8FBF46181D9220A8006785FA /* Warrior.m */,
 				8FBF461A1D9221EC006785FA /* Wizard.h */,
 				8FBF461B1D9221EC006785FA /* Wizard.m */,
+				8F50BD6D1D92690200229AD0 /* Cat.h */,
+				8F50BD6E1D92690200229AD0 /* Cat.m */,
 			);
 			path = Example0921;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F50BD6F1D92690200229AD0 /* Cat.m in Sources */,
 				8FBF46191D9220A8006785FA /* Warrior.m in Sources */,
 				8FBF461C1D9221EC006785FA /* Wizard.m in Sources */,
 				8FBF46111D92164B006785FA /* main.m in Sources */,
@@ -258,6 +264,7 @@
 				8FBF46161D92164B006785FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

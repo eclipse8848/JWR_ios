@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class Warrior;
 @interface Wizard : NSObject
+
+@property NSString *name;
+@property NSInteger level;
+@property NSInteger health;
+@property NSInteger mana;
+@property NSUInteger physicalPower;
+@property NSUInteger magicalPower;
+@property BOOL isAlive;
+@property NSString *location;
+
+- (id)physicalAttackTo:(Warrior *)someCharacter;
+- (id)magicalAttackTo:(Warrior *)someCharacter;
+- (id)blinkTo:(NSString *)someWhere;
 
 @end
