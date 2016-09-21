@@ -153,7 +153,7 @@ int main(int argc, const char * argv[]) {
     // %5.2f
     // %-10.3f
     // %10.0f 들의 의미를 아라보자
-    
+
     
     // (https://goo.gl/emGQfp) String Programming Guide
     
