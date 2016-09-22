@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FB3E2961D936CA600E3FC46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2951D936CA600E3FC46 /* main.m */; };
+		8FB3E29E1D936CB400E3FC46 /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E29D1D936CB400E3FC46 /* Warrior.m */; };
+		8FB3E2A11D936CBE00E3FC46 /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2A01D936CBE00E3FC46 /* Wizard.m */; };
+		8FB3E2A41D936D5000E3FC46 /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2A31D936D5000E3FC46 /* GameCharacter.m */; };
+		8FB3E2A71D93715600E3FC46 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2A61D93715600E3FC46 /* Animal.m */; };
+		8FB3E2AA1D93716100E3FC46 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2A91D93716100E3FC46 /* Cat.m */; };
+		8FB3E2AD1D93716800E3FC46 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2AC1D93716800E3FC46 /* Dog.m */; };
+		8FB3E2B01D93717100E3FC46 /* Horse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2AF1D93717100E3FC46 /* Horse.m */; };
+		8FB3E2B31D93717B00E3FC46 /* Elephant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2B21D93717B00E3FC46 /* Elephant.m */; };
+		8FB3E2B61D93754200E3FC46 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2B51D93754200E3FC46 /* Person.m */; };
+		8FB3E2B91D93768B00E3FC46 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2B81D93768B00E3FC46 /* Student.m */; };
+		8FB3E2BC1D93773800E3FC46 /* UniversityStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2BB1D93773800E3FC46 /* UniversityStudent.m */; };
+		8FB3E2BF1D93798800E3FC46 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E2BE1D93798800E3FC46 /* Teacher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FB3E2901D936CA500E3FC46 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8FB3E2921D936CA600E3FC46 /* Example0922 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Example0922; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB3E2951D936CA600E3FC46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FB3E29C1D936CB400E3FC46 /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		8FB3E29D1D936CB400E3FC46 /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
+		8FB3E29F1D936CBE00E3FC46 /* Wizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wizard.h; sourceTree = "<group>"; };
+		8FB3E2A01D936CBE00E3FC46 /* Wizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wizard.m; sourceTree = "<group>"; };
+		8FB3E2A21D936D5000E3FC46 /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
+		8FB3E2A31D936D5000E3FC46 /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
+		8FB3E2A51D93715600E3FC46 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		8FB3E2A61D93715600E3FC46 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		8FB3E2A81D93716100E3FC46 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		8FB3E2A91D93716100E3FC46 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		8FB3E2AB1D93716800E3FC46 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		8FB3E2AC1D93716800E3FC46 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		8FB3E2AE1D93717100E3FC46 /* Horse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Horse.h; sourceTree = "<group>"; };
+		8FB3E2AF1D93717100E3FC46 /* Horse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Horse.m; sourceTree = "<group>"; };
+		8FB3E2B11D93717B00E3FC46 /* Elephant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elephant.h; sourceTree = "<group>"; };
+		8FB3E2B21D93717B00E3FC46 /* Elephant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elephant.m; sourceTree = "<group>"; };
+		8FB3E2B41D93754200E3FC46 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8FB3E2B51D93754200E3FC46 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		8FB3E2B71D93768B00E3FC46 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		8FB3E2B81D93768B00E3FC46 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		8FB3E2BA1D93773800E3FC46 /* UniversityStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversityStudent.h; sourceTree = "<group>"; };
+		8FB3E2BB1D93773800E3FC46 /* UniversityStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversityStudent.m; sourceTree = "<group>"; };
+		8FB3E2BD1D93798800E3FC46 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		8FB3E2BE1D93798800E3FC46 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FB3E28F1D936CA500E3FC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FB3E2891D936CA500E3FC46 = {
+			isa = PBXGroup;
+			children = (
+				8FB3E2941D936CA600E3FC46 /* Example0922 */,
+				8FB3E2931D936CA600E3FC46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB3E2931D936CA600E3FC46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FB3E2921D936CA600E3FC46 /* Example0922 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FB3E2941D936CA600E3FC46 /* Example0922 */ = {
+			isa = PBXGroup;
+			children = (
+				8FB3E2951D936CA600E3FC46 /* main.m */,
+				8FB3E2A21D936D5000E3FC46 /* GameCharacter.h */,
+				8FB3E2A31D936D5000E3FC46 /* GameCharacter.m */,
+				8FB3E29C1D936CB400E3FC46 /* Warrior.h */,
+				8FB3E29D1D936CB400E3FC46 /* Warrior.m */,
+				8FB3E29F1D936CBE00E3FC46 /* Wizard.h */,
+				8FB3E2A01D936CBE00E3FC46 /* Wizard.m */,
+				8FB3E2A51D93715600E3FC46 /* Animal.h */,
+				8FB3E2A61D93715600E3FC46 /* Animal.m */,
+				8FB3E2A81D93716100E3FC46 /* Cat.h */,
+				8FB3E2A91D93716100E3FC46 /* Cat.m */,
+				8FB3E2AB1D93716800E3FC46 /* Dog.h */,
+				8FB3E2AC1D93716800E3FC46 /* Dog.m */,
+				8FB3E2AE1D93717100E3FC46 /* Horse.h */,
+				8FB3E2AF1D93717100E3FC46 /* Horse.m */,
+				8FB3E2B11D93717B00E3FC46 /* Elephant.h */,
+				8FB3E2B21D93717B00E3FC46 /* Elephant.m */,
+				8FB3E2B41D93754200E3FC46 /* Person.h */,
+				8FB3E2B51D93754200E3FC46 /* Person.m */,
+				8FB3E2B71D93768B00E3FC46 /* Student.h */,
+				8FB3E2B81D93768B00E3FC46 /* Student.m */,
+				8FB3E2BA1D93773800E3FC46 /* UniversityStudent.h */,
+				8FB3E2BB1D93773800E3FC46 /* UniversityStudent.m */,
+				8FB3E2BD1D93798800E3FC46 /* Teacher.h */,
+				8FB3E2BE1D93798800E3FC46 /* Teacher.m */,
+			);
+			path = Example0922;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FB3E2911D936CA500E3FC46 /* Example0922 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB3E2991D936CA600E3FC46 /* Build configuration list for PBXNativeTarget "Example0922" */;
+			buildPhases = (
+				8FB3E28E1D936CA500E3FC46 /* Sources */,
+				8FB3E28F1D936CA500E3FC46 /* Frameworks */,
+				8FB3E2901D936CA500E3FC46 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example0922;
+			productName = Example0922;
+			productReference = 8FB3E2921D936CA600E3FC46 /* Example0922 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FB3E28A1D936CA500E3FC46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "노정우";
+				TargetAttributes = {
+					8FB3E2911D936CA500E3FC46 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8FB3E28D1D936CA500E3FC46 /* Build configuration list for PBXProject "Example0922" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8FB3E2891D936CA500E3FC46;
+			productRefGroup = 8FB3E2931D936CA600E3FC46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FB3E2911D936CA500E3FC46 /* Example0922 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FB3E28E1D936CA500E3FC46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB3E2B91D93768B00E3FC46 /* Student.m in Sources */,
+				8FB3E2AA1D93716100E3FC46 /* Cat.m in Sources */,
+				8FB3E29E1D936CB400E3FC46 /* Warrior.m in Sources */,
+				8FB3E2BC1D93773800E3FC46 /* UniversityStudent.m in Sources */,
+				8FB3E2B61D93754200E3FC46 /* Person.m in Sources */,
+				8FB3E2A41D936D5000E3FC46 /* GameCharacter.m in Sources */,
+				8FB3E2B01D93717100E3FC46 /* Horse.m in Sources */,
+				8FB3E2B31D93717B00E3FC46 /* Elephant.m in Sources */,
+				8FB3E2BF1D93798800E3FC46 /* Teacher.m in Sources */,
+				8FB3E2A71D93715600E3FC46 /* Animal.m in Sources */,
+				8FB3E2AD1D93716800E3FC46 /* Dog.m in Sources */,
+				8FB3E2A11D936CBE00E3FC46 /* Wizard.m in Sources */,
+				8FB3E2961D936CA600E3FC46 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8FB3E2971D936CA600E3FC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8FB3E2981D936CA600E3FC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8FB3E29A1D936CA600E3FC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FB3E29B1D936CA600E3FC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FB3E28D1D936CA500E3FC46 /* Build configuration list for PBXProject "Example0922" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB3E2971D936CA600E3FC46 /* Debug */,
+				8FB3E2981D936CA600E3FC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB3E2991D936CA600E3FC46 /* Build configuration list for PBXNativeTarget "Example0922" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB3E29A1D936CA600E3FC46 /* Debug */,
+				8FB3E29B1D936CA600E3FC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FB3E28A1D936CA500E3FC46 /* Project object */;
+}
