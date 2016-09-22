@@ -14,6 +14,6 @@
 @property NSString *color;
 
 - (id)eatFood:(NSString *)something;
-- (id)cryTo:(id)someone;
+- (id)cry;
 
-@end
+@end;

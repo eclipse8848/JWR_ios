@@ -5,7 +5,7 @@
 //  Created by 노정우 on 2016. 9. 22..
 //  Copyright © 2016년 노정우. All rights reserved.
 //
-//  Learn about inheritance
+//  Learn about inheritance & override & hidden
 #import <Foundation/Foundation.h>
 #import "Warrior.h"
 #import "Wizard.h"
@@ -13,33 +13,24 @@
 #import "UniversityStudent.h"
 #import "Student.h"
 #import "Teacher.h"
+#import "Horse.h"
+#import "Dog.h"
+#import "Elephant.h"
+#import "Animal.h"
+#import "GameCharacter.h"
 int main(int argc, const char * argv[]) {
     
-    Warrior *jason = [[Warrior alloc] init];
-    jason.name = @"전사철수";
-    jason.health = 1000;
-    jason.physicalPower = 100;
+
     
-    
-    Wizard *rose = [[Wizard alloc] init];
-    rose.name = @"법사영희";
-    rose.health = 700;
-    rose.physicalPower = 50;
-    [rose physicalAttackTo:jason];
-    
-    Wizard *mave = [[Wizard alloc] init];
-    mave.name = @"리사";
-    mave.health = 650;
-    mave.physicalPower = 100;
-    
-    [rose physicalAttackTo:mave];
     
     
     Cat *leo = [[Cat alloc] init];
     leo.name = @"레오";
     leo.color = @"검은";
     
-    [leo cryTo:@"rose"];
+    
+    Person *yagom = [[Person alloc] init];
+    yagom.name = @"야곰이";
     
     UniversityStudent *uniStudent = [[UniversityStudent alloc] init];
     uniStudent.name = @"마이크";
@@ -61,8 +52,24 @@ int main(int argc, const char * argv[]) {
     
     [computerTeacher teach:uniStudent];
     
+    [yagom adopt:leo];
     [uniStudent adopt:leo];
+    [normalStudent adopt:leo];
     
+    
+    Dog *sampleDog = [[Dog alloc] init];
+    sampleDog.name = @"뽀삐";
+    
+    Horse *sampleHorse = [[Horse alloc] init];
+    sampleHorse.name = @"적토마";
+    
+    Elephant *sampleElephant = [[Elephant alloc] init];
+    sampleElephant.name = @"코돌이";
+    
+    [leo cry];
+    [sampleDog cry];
+    [sampleHorse cry];
+    [sampleElephant cry];
     
     
     return 0;

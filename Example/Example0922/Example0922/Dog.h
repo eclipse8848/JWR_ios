@@ -6,7 +6,7 @@
 //  Copyright © 2016년 노정우. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
 #import "Animal.h"
 @interface Dog : Animal
 

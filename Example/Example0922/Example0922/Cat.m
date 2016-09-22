@@ -10,4 +10,9 @@
 
 @implementation Cat
 
+- (id)cry {
+    [super cry];
+    NSLog(@"고양이 %@가 야옹하고 웁니다.", self.name);
+    return nil;
+}
 @end

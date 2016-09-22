@@ -10,9 +10,9 @@
 
 @implementation Animal
 
-- (id)cryTo:(id)someone {
+- (id)cry{
     
-    NSLog(@"%@를 보고 웁니다.", someone);
+    NSLog(@"%@가 웁니다.", self.name);
     return nil;
 }
 

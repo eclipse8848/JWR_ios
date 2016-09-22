@@ -10,4 +10,10 @@
 
 @implementation Dog
 
+- (id)cry {
+    
+    NSLog(@"개 %@가 멍멍하고 짖습니다.", self.name);
+    return nil;
+}
+
 @end

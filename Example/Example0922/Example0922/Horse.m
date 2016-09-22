@@ -10,4 +10,10 @@
 
 @implementation Horse
 
+
+- (id)cry {
+    
+    NSLog(@"말 %@가 이히힝 하고 웁니다.", self.name);
+    return nil;
+}
 @end

@@ -15,5 +15,9 @@
     NSLog(@"MT를 갑니다.");
     return nil;
 }
-
+- (id)adopt:(Animal *)someAnimal {
+    
+    NSLog(@"%@가 동물이름 %@를 입양하는데에 실패하였습니다. 기숙사 정책에 의하여..", self.name, someAnimal.name);
+    return nil;
+}
 @end
