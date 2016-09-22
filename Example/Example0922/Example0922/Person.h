@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Animal.h"
 @interface Person : NSObject
 
 @property NSString *name;
@@ -15,5 +15,6 @@
 
 
 - (id)eat;
+- (id)adopt:(Animal *)someAnimal;
 
 @end

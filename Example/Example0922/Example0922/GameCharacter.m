@@ -10,9 +10,9 @@
 
 @implementation GameCharacter
 
-- (id)physicalAttackTo:(id)someone {
+- (id)physicalAttackTo:(GameCharacter *)someone {
     
-    NSLog(@"%@에게 물리공격을 가합니다.", someone);
+    NSLog(@"%@가 %@에게 물리공격을 가합니다.", self.name, someone.name);
     
     return nil;
 }
