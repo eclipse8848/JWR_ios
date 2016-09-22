@@ -5,7 +5,7 @@
 //  Created by 노정우 on 2016. 9. 22..
 //  Copyright © 2016년 노정우. All rights reserved.
 //
-
+//  Learn about inheritance
 #import <Foundation/Foundation.h>
 #import "Warrior.h"
 #import "Cat.h"

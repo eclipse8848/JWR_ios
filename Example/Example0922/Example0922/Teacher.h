@@ -6,10 +6,12 @@
 //  Copyright © 2016년 노정우. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "Person.h"
 @interface Teacher : Person
 
+@property NSString *subject;
+
+- (id)teach:(id)someone;
 
 
 @end
