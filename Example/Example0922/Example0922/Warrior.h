@@ -13,6 +13,6 @@
 @interface Warrior : GameCharacter
 
 - (id)jumpTo:(NSString *)location;
-- (id)smashTo:(id)someone;
+- (id)smashTo:(GameCharacter *)someone;
 
 @end

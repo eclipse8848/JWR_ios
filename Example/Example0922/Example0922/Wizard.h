@@ -10,7 +10,7 @@
 #import "GameCharacter.h"
 @interface Wizard : GameCharacter
 
-- (id)magicalAttackTo:(id)someone;
+- (id)magicalAttackTo:(GameCharacter *)someone;
 - (id)blinkTo:(NSString *)location;
 
 @end
