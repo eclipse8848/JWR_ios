@@ -39,5 +39,8 @@ int main(int argc, const char * argv[]) {
     
     CGFloat fnum = [Condition roundNum:3.135];
     NSLog(@"%lf", fnum);
+    
+    CGFloat mile = [ToolBox kmToMile:180];
+    NSLog(@"%lf", mile);
     return 0;
 }

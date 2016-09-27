@@ -17,5 +17,5 @@
 + (CGFloat)m2ToPyung:(CGFloat)m2;
 + (CGFloat)PyungToM2:(CGFloat)Pyung;
 
-
++ (CGFloat)kmToMile:(CGFloat)km;
 @end

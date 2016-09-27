@@ -34,4 +34,9 @@
     CGFloat m2 = pyung * 3.305785;
     return m2;
 }
+
++ (CGFloat)kmToMile:(CGFloat)km {
+    CGFloat mile = km * 0.621371;
+    return mile;
+}
 @end
