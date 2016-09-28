@@ -17,4 +17,5 @@
 
 - (void)addLastValue:(NSInteger)value;
 - (void)printAllNode;
+- (void)removeLast;
 @end

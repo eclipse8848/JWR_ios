@@ -15,6 +15,9 @@ int main(int argc, const char * argv[]) {
         [dLink addLastValue:9];
         [dLink addLastValue:15];
         [dLink printAllNode];
+        NSLog(@"---------------");
+        [dLink removeLast];
+        [dLink printAllNode];
         
     }
     return 0;

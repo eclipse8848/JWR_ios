@@ -23,10 +23,12 @@
     return self;
 }
 
+- (void)insertBetValue:(NSInteger)value {
+    [self insertMoreValue:self.header newValue:value];
+}
 
 
-
-- (void)insertValue:(NSInteger)newValue {
+- (void)insertMoreValue:(NSInteger)newValue {
     
     Node *newNode = [[Node alloc] init];
     newNode.value = newValue;
@@ -43,6 +45,9 @@
     }
 }
 
+
+
+// add(마지막에 데이터를 추가한다.)
 - (void)addLastValue:(NSInteger)value {
     
     [self addLastIndexNode:self.header newValue:value];
@@ -50,7 +55,6 @@
 }
 
 
-// add(마지막에 데이터를 추가한다.)
 - (void)addLastIndexNode:(Node *)nowNode newValue:(NSInteger)value{
     //nowNode의 next가 nil이다.
     if (nowNode.next == nil) {
@@ -79,13 +83,35 @@
 
 
 // removeLast
+- (void)removeLast {
+    [self removeLastNode:self.header];
+}
+
+- (void)removeLastNode:(Node *)nowNode {
+    
+    if(nowNode.next == nil) {
+        
+        Node *preLast = nowNode.previous;
+        preLast.next = nil;
+        nowNode.previous = nil;
+        
+    }else {
+        [self removeLastNode:nowNode.next];
+    }
+    
+}
+
 
 // count(총 노드의 갯수를 구한다)
 
 // printNode(모든 노드의 데이터를 출력한다.)
 
 - (void)printAllNode {
-    [self printNode:self.header];
+    //요러케하면 0부터 안나옴
+    if(self.header.next != nil){
+    [self printNode:self.header.next];
+    }
+    
 }
 
 - (void)printNode:(Node *)node {
