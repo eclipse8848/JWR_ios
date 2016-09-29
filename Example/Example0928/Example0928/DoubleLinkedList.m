@@ -23,27 +23,9 @@
     return self;
 }
 
-- (void)insertBetValue:(NSInteger)value {
-    [self insertMoreValue:self.header newValue:value];
-}
 
 
-- (void)insertMoreValue:(NSInteger)newValue {
-    
-    Node *newNode = [[Node alloc] init];
-    newNode.value = newValue;
-    
-    if (self.header.next == nil) {
-        self.header.next = newNode;
-        newNode.previous = self.header;
-        newNode.next = nil;
-    }else {
-        newNode.previous = self.header;
-        newNode.next = self.header.next;
-        self.header.next.previous = newNode;
-        self.header.next = newNode;
-    }
-}
+
 
 
 
@@ -61,7 +43,7 @@
         Node *newNode = [[Node alloc] init];
         newNode.value = value;
         newNode.previous = nowNode;
-        nowNode.next = nil;
+        newNode.next = nil;
         newNode.index = self.lastIndex;
         nowNode.next = newNode;
         self.lastIndex = self.lastIndex + 1;
