@@ -49,11 +49,15 @@ int main(int argc, const char * argv[]) {
         }
         
         NSString *removeResult = [myBook removeBook:@"안드로이드 개발"];
-        if (removeResult != nil) {
+       if (removeResult != nil) {
             NSLog(@"%@ 책을 지웠습니다.", removeResult);
         }else {
             NSLog(@"지울려는 책이 없습니다.");
         }
+        
+
+        
+        
         
         NSLog(@"%@",[myBook showAllBook]);
         

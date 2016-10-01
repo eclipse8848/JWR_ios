@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FC7B9E41D9D350600D9FAF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7B9E31D9D350600D9FAF3 /* main.m */; };
-		8FC7B9EC1D9D352200D9FAF3 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7B9EB1D9D352200D9FAF3 /* Book.m */; };
-		8FC7B9EF1D9D352C00D9FAF3 /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7B9EE1D9D352C00D9FAF3 /* BookManager.m */; };
+		8FC47D101D9DECD100AA61C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC47D0F1D9DECD100AA61C0 /* main.m */; };
+		8FC47D181D9DECE100AA61C0 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC47D171D9DECE100AA61C0 /* Video.m */; };
+		8FC47D1B1D9DF05800AA61C0 /* VideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC47D1A1D9DF05800AA61C0 /* VideoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8FC7B9DE1D9D350600D9FAF3 /* CopyFiles */ = {
+		8FC47D0A1D9DECD100AA61C0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8FC7B9E01D9D350600D9FAF3 /* BookManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookManager; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FC7B9E31D9D350600D9FAF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8FC7B9EA1D9D352200D9FAF3 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = BookManager/Book.h; sourceTree = "<group>"; };
-		8FC7B9EB1D9D352200D9FAF3 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		8FC7B9ED1D9D352C00D9FAF3 /* BookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManager.h; sourceTree = "<group>"; };
-		8FC7B9EE1D9D352C00D9FAF3 /* BookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManager.m; sourceTree = "<group>"; };
+		8FC47D0C1D9DECD100AA61C0 /* VideoManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VideoManager; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC47D0F1D9DECD100AA61C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FC47D161D9DECE100AA61C0 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		8FC47D171D9DECE100AA61C0 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		8FC47D191D9DF05800AA61C0 /* VideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoManager.h; sourceTree = "<group>"; };
+		8FC47D1A1D9DF05800AA61C0 /* VideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8FC7B9DD1D9D350600D9FAF3 /* Frameworks */ = {
+		8FC47D091D9DECD100AA61C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,101 +44,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8FC7B9D71D9D350600D9FAF3 = {
+		8FC47D031D9DECD100AA61C0 = {
 			isa = PBXGroup;
 			children = (
-				8FC7B9EA1D9D352200D9FAF3 /* Book.h */,
-				8FC7B9E21D9D350600D9FAF3 /* BookManager */,
-				8FC7B9E11D9D350600D9FAF3 /* Products */,
+				8FC47D0E1D9DECD100AA61C0 /* VideoManager */,
+				8FC47D0D1D9DECD100AA61C0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8FC7B9E11D9D350600D9FAF3 /* Products */ = {
+		8FC47D0D1D9DECD100AA61C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FC7B9E01D9D350600D9FAF3 /* BookManager */,
+				8FC47D0C1D9DECD100AA61C0 /* VideoManager */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8FC7B9E21D9D350600D9FAF3 /* BookManager */ = {
+		8FC47D0E1D9DECD100AA61C0 /* VideoManager */ = {
 			isa = PBXGroup;
 			children = (
-				8FC7B9E31D9D350600D9FAF3 /* main.m */,
-				8FC7B9EB1D9D352200D9FAF3 /* Book.m */,
-				8FC7B9ED1D9D352C00D9FAF3 /* BookManager.h */,
-				8FC7B9EE1D9D352C00D9FAF3 /* BookManager.m */,
+				8FC47D0F1D9DECD100AA61C0 /* main.m */,
+				8FC47D191D9DF05800AA61C0 /* VideoManager.h */,
+				8FC47D1A1D9DF05800AA61C0 /* VideoManager.m */,
+				8FC47D161D9DECE100AA61C0 /* Video.h */,
+				8FC47D171D9DECE100AA61C0 /* Video.m */,
 			);
-			path = BookManager;
+			path = VideoManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8FC7B9DF1D9D350600D9FAF3 /* BookManager */ = {
+		8FC47D0B1D9DECD100AA61C0 /* VideoManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FC7B9E71D9D350600D9FAF3 /* Build configuration list for PBXNativeTarget "BookManager" */;
+			buildConfigurationList = 8FC47D131D9DECD100AA61C0 /* Build configuration list for PBXNativeTarget "VideoManager" */;
 			buildPhases = (
-				8FC7B9DC1D9D350600D9FAF3 /* Sources */,
-				8FC7B9DD1D9D350600D9FAF3 /* Frameworks */,
-				8FC7B9DE1D9D350600D9FAF3 /* CopyFiles */,
+				8FC47D081D9DECD100AA61C0 /* Sources */,
+				8FC47D091D9DECD100AA61C0 /* Frameworks */,
+				8FC47D0A1D9DECD100AA61C0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BookManager;
-			productName = BookManager;
-			productReference = 8FC7B9E01D9D350600D9FAF3 /* BookManager */;
+			name = VideoManager;
+			productName = VideoManager;
+			productReference = 8FC47D0C1D9DECD100AA61C0 /* VideoManager */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8FC7B9D81D9D350600D9FAF3 /* Project object */ = {
+		8FC47D041D9DECD100AA61C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "노정우";
 				TargetAttributes = {
-					8FC7B9DF1D9D350600D9FAF3 = {
+					8FC47D0B1D9DECD100AA61C0 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8FC7B9DB1D9D350600D9FAF3 /* Build configuration list for PBXProject "BookManager" */;
+			buildConfigurationList = 8FC47D071D9DECD100AA61C0 /* Build configuration list for PBXProject "VideoManager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8FC7B9D71D9D350600D9FAF3;
-			productRefGroup = 8FC7B9E11D9D350600D9FAF3 /* Products */;
+			mainGroup = 8FC47D031D9DECD100AA61C0;
+			productRefGroup = 8FC47D0D1D9DECD100AA61C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FC7B9DF1D9D350600D9FAF3 /* BookManager */,
+				8FC47D0B1D9DECD100AA61C0 /* VideoManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8FC7B9DC1D9D350600D9FAF3 /* Sources */ = {
+		8FC47D081D9DECD100AA61C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC7B9EF1D9D352C00D9FAF3 /* BookManager.m in Sources */,
-				8FC7B9EC1D9D352200D9FAF3 /* Book.m in Sources */,
-				8FC7B9E41D9D350600D9FAF3 /* main.m in Sources */,
+				8FC47D101D9DECD100AA61C0 /* main.m in Sources */,
+				8FC47D181D9DECE100AA61C0 /* Video.m in Sources */,
+				8FC47D1B1D9DF05800AA61C0 /* VideoManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8FC7B9E51D9D350600D9FAF3 /* Debug */ = {
+		8FC47D111D9DECD100AA61C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +185,7 @@
 			};
 			name = Debug;
 		};
-		8FC7B9E61D9D350600D9FAF3 /* Release */ = {
+		8FC47D121D9DECD100AA61C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,14 +225,14 @@
 			};
 			name = Release;
 		};
-		8FC7B9E81D9D350600D9FAF3 /* Debug */ = {
+		8FC47D141D9DECD100AA61C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		8FC7B9E91D9D350600D9FAF3 /* Release */ = {
+		8FC47D151D9DECD100AA61C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -242,25 +242,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FC7B9DB1D9D350600D9FAF3 /* Build configuration list for PBXProject "BookManager" */ = {
+		8FC47D071D9DECD100AA61C0 /* Build configuration list for PBXProject "VideoManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FC7B9E51D9D350600D9FAF3 /* Debug */,
-				8FC7B9E61D9D350600D9FAF3 /* Release */,
+				8FC47D111D9DECD100AA61C0 /* Debug */,
+				8FC47D121D9DECD100AA61C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FC7B9E71D9D350600D9FAF3 /* Build configuration list for PBXNativeTarget "BookManager" */ = {
+		8FC47D131D9DECD100AA61C0 /* Build configuration list for PBXNativeTarget "VideoManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FC7B9E81D9D350600D9FAF3 /* Debug */,
-				8FC7B9E91D9D350600D9FAF3 /* Release */,
+				8FC47D141D9DECD100AA61C0 /* Debug */,
+				8FC47D151D9DECD100AA61C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8FC7B9D81D9D350600D9FAF3 /* Project object */;
+	rootObject = 8FC47D041D9DECD100AA61C0 /* Project object */;
 }
