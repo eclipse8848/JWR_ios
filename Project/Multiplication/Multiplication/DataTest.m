@@ -10,33 +10,7 @@
 
 @implementation DataTest
 
-//- (void)printAlbumName{
-//    NSLog(@"앨범 타이틀 : %@", self.aoaAlbum[@"album_info"][@"title"]);
-//}
-//
-//- (void)printSongLists{
-//    for (NSInteger i = 0; i < [self.aoaAlbum[@"song_list"] count]; i++)
-//        NSLog(@"곡리스트 : %@", self.aoaAlbum[@"song_list"][i][@"name"]);
-//}
-//
-//- (NSMutableArray *)makeSongArray{
-//    NSMutableArray *songDataArr = [NSMutableArray array];
-//    for (NSInteger i = 0; i < [self.aoaAlbum[@"song_list"] count]; i++)
-//        songDataArr[i] = self.aoaAlbum[@"song_list"];
-//    return songDataArr;
-//}
-//
-//- (void)printSongLyrics:(NSString *)songTitle{
-//    for (NSInteger i = 0; i < [self.aoaAlbum[@"song_list"] count]; i++)
-//        if ([self.aoaAlbum[@"song_list"][i][@"name"] isEqualToString:songTitle])
-//            NSLog(@"%@ 가사\n%@", songTitle, self.aoaAlbum[@"song_list"][i][@"song_info"][@"lyrics"]);
-//}
-//
-//- (void)printSongRange:(NSString *)songTitle{
-//    for (NSInteger i = 0; i < [self.aoaAlbum[@"song_list"] count]; i++)
-//        if ([self.aoaAlbum[@"song_list"][i][@"name"] isEqualToString:songTitle])
-//            NSLog(@"곡 길이 : %@", self.aoaAlbum[@"song_list"][i][@"total_play_time"]);
-//}
+
 - (NSString *)titleWithData:(NSDictionary *)data {
     if (data != nil) {
         
