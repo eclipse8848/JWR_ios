@@ -27,10 +27,13 @@
 
 
 
-
+NSString
 
 // add(마지막에 데이터를 추가한다.)
 - (void)addLastValue:(NSInteger)value {
+    
+    NSString *str;
+    
     
     [self addLastIndexNode:self.header newValue:value];
     
