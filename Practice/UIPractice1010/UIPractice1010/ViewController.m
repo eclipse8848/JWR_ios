@@ -9,29 +9,103 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic) NSMutableArray *okBtns;
+@property UIButton *beforeBtn;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 240)];
-    [myView setBackgroundColor:[UIColor redColor]];
-    [myView setAlpha:0.5];
-    [self.view addSubview:myView];
+    self.okBtns = [[NSMutableArray alloc] init];
+
     
-    UILabel *myLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 100, 35)];
-    [myLabel setText:@"첫번째 레이블"];
-    [myLabel setTextColor:[UIColor blackColor]];
-    [myLabel setTextAlignment:NSTextAlignmentCenter];
-    [myView addSubview:myLabel];
+    for(NSInteger i = 0; i < 4; i++)
+    {
+        UIButton *okBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        [okBtn setTitle:@"ok" forState:UIControlStateNormal];
+        [okBtn setTitle:@"touchDown" forState:UIControlStateHighlighted];
+        [okBtn setTitle:@"ok" forState:UIControlStateSelected];
+        [okBtn setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
+        [okBtn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+        [okBtn setTitleColor:[UIColor magentaColor] forState:UIControlStateSelected];
+        okBtn.titleLabel.font = [UIFont systemFontOfSize:30];
+        [okBtn addTarget:self action:@selector(touchUpInsideOKBtn:) forControlEvents:UIControlEventTouchUpInside];
+        okBtn.tag = i;
+        [self.view addSubview:okBtn];
+        [self.okBtns addObject:okBtn];
+    }
+    [self updateLayout];
     
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 150)];
-    [imgView setImage:[UIImage imageNamed:@"jin3.jpg"]];
-    [imgView setContentMode:UIViewContentModeScaleAspectFit];
-    [self.view addSubview:imgView];
+    UISwitch *switchButton = [[UISwitch alloc] init];
+    [switchButton setTintColor:[UIColor magentaColor]];
+    [switchButton setOnTintColor:[UIColor magentaColor]];
+    [switchButton setThumbTintColor:[UIColor blackColor]];
+    switchButton.frame = CGRectMake(200, 200, 100, 100);
+    [self.view addSubview:switchButton];
     
+    UISlider *slider = [[UISlider alloc] init];
+    slider.minimumValue = 0;
+    slider.maximumValue = 15;
+    slider.value = 7;
+    slider.frame = CGRectMake(200, 400, 200, 200);
+    [self.view addSubview:slider];
+    
+    UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(100, 300, 160, 35)];
+    tf.borderStyle = UITextBorderStyleLine;
+    tf.delegate = self;
+    [self.view addSubview:tf];
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if(textField.text.length < 5)
+    {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)updateLayout
+{
+
+    for (UIButton *okButton in self.okBtns) {
+        NSInteger row = okButton.tag/2;
+        NSInteger cal = okButton.tag%2;
+        CGFloat okBtnWidth = 130;
+        CGFloat okBtnHeight = 50;
+        okButton.frame = CGRectMake(okBtnWidth*cal + 10, okBtnHeight*row + 10, okBtnWidth, okBtnHeight);
+
+    }
+    
+}
+
+
+- (void)touchUpInsideOKBtn:(UIButton *)sender
+{
+    
+    if(sender.selected)
+    {
+        sender.selected = NO;
+        self.beforeBtn = nil;
+
+    }
+    else
+    {
+        self.beforeBtn.selected = NO;
+        sender.selected = YES;
+        self.beforeBtn = sender;
+    }
+    
+    NSLog(@"버튼클릭 완료");
 }
 
 

@@ -41,7 +41,7 @@
     centerLabel.font = [UIFont systemFontOfSize:30];
     [self.view addSubview:centerLabel];
     
-    UIImage
+
 }
 
 

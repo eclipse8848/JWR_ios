@@ -38,7 +38,7 @@
     [self.playButton setTitle:@"Play" forState:UIControlStateNormal];
     [self.playButton setTitle:@"Pause" forState:UIControlStateSelected];
     [self.playButton setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
-    [self.playButton setTitleColor:[UIColor blueColor]forState:UIControlStateNormal];
+    [self.playButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.playButton setBackgroundColor:[UIColor yellowColor]];
     [self.playButton addTarget:self action:@selector(clickPlayButton:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -96,7 +96,9 @@
 
 #pragma mark - AVAudioPlayerDelegate Methods
 
-- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error {UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"알림" message:@"음원파일 디코딩 하는데 문제가 발생했습니다." preferredStyle:UIAlertControllerStyleAlert];
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"알림" message:@"음원파일 디코딩 하는데 문제가 발생했습니다." preferredStyle:UIAlertControllerStyleAlert];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:nil]];
     

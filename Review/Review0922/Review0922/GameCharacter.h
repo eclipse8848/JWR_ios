@@ -20,6 +20,5 @@
 - (id)physicalAttackTo:(GameCharacter *)someCharacter;
 - (id)magicalAttackTo:(GameCharacter *)someCharacter;
 
-- (
 
 @end
