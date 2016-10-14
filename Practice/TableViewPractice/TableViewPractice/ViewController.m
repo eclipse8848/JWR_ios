@@ -43,6 +43,52 @@
     return self.animalList.count;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewHeaderFooterView *section = [tableView headerViewForSection:indexPath.section];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        UIAlertController *alertContoller = [UIAlertController alertControllerWithTitle:@"알림!"
+                                                                    message:[NSString stringWithFormat:@"%@섹션 %@ 선택되었습니다.", section.textLabel.text, cell.textLabel.text]
+                                                                         preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okBtn = [UIAlertAction actionWithTitle:@"확인"
+                                                        style:UIAlertActionStyleCancel handler:nil];
+        [alertContoller addAction:okBtn];
+        [self presentViewController:alertContoller animated:YES completion:nil];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+//-(void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UIAlertController *alertContoller = [UIAlertController alertControllerWithTitle:@"알림!"
+//                                                                            message:[NSString stringWithFormat:@"%ld번섹션 %ld번셀이 선택되었습니다.", indexPath.section,indexPath.row]
+//                                                                     preferredStyle:UIAlertControllerStyleAlert];
+//    UIAlertAction *okBtn = [UIAlertAction actionWithTitle:@"확인"
+//                                                    style:UIAlertActionStyleCancel handler:nil];
+//    [alertContoller addAction:okBtn];
+//    [self presentViewController:alertContoller animated:YES completion:nil];
+//}
+
+//-(void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UIAlertController *alertContoller = [UIAlertController alertControllerWithTitle:@"알림!"
+//                                                                            message:[NSString stringWithFormat:@"%ld번섹션 %ld번셀이 선택해제되었습니다.", indexPath.section,indexPath.row]
+//                                                                     preferredStyle:UIAlertControllerStyleAlert];
+//    UIAlertAction *okBtn = [UIAlertAction actionWithTitle:@"확인"
+//                                                    style:UIAlertActionStyleCancel handler:nil];
+//    [alertContoller addAction:okBtn];
+//    [self presentViewController:alertContoller animated:YES completion:nil];
+//}
+
+//-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UIAlertController *alertContoller = [UIAlertController alertControllerWithTitle:@"알림!"
+//                                                                            message:[NSString stringWithFormat:@"%ld번섹션 %ld번셀이 선택해제되었습니다.", indexPath.section,indexPath.row]
+//                                                                     preferredStyle:UIAlertControllerStyleAlert];
+//    UIAlertAction *okBtn = [UIAlertAction actionWithTitle:@"확인"
+//                                                    style:UIAlertActionStyleCancel handler:nil];
+//    [alertContoller addAction:okBtn];
+//    [self presentViewController:alertContoller animated:YES completion:nil];
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -58,9 +104,11 @@
     return title;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (cell == nil) {
+    if (cell == nil)
+    {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
         NSLog(@"%ld",indexPath.row);
     }
