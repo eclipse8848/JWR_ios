@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l91-8u-qxf">
+                                <color key="backgroundColor" red="1" green="0.4552804433" blue="0.51630799559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l91-8u-qxf" secondAttribute="height" multiplier="1:1" id="Q3R-hp-uyt"/>
+                                </constraints>
+                            </view>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="GBW-iL-zTB">
+                                <connections>
+                                    <action selector="clickStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="t6N-XZ-FbA"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utD-od-Ypu">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l91-8u-qxf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7ml-Zr-o5Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="utD-od-Ypu" secondAttribute="trailing" constant="10" id="9i0-lU-aus"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="utD-od-Ypu" secondAttribute="bottom" constant="10" id="Aru-iG-4F0"/>
+                            <constraint firstItem="l91-8u-qxf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GNt-dM-pBH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l91-8u-qxf" secondAttribute="trailing" constant="60" id="kXK-hH-v0m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GBW-iL-zTB" secondAttribute="bottom" constant="10" id="u4b-DL-Jw3"/>
+                            <constraint firstItem="GBW-iL-zTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="wtk-xK-QSg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jwConstraint" destination="Q3R-hp-uyt" id="UV1-WE-tta"/>
+                        <outlet property="myLabel" destination="utD-od-Ypu" id="duO-TU-Rpc"/>
+                        <outlet property="myStepper" destination="GBW-iL-zTB" id="B1x-VE-pT6"/>
+                        <outlet property="myView" destination="l91-8u-qxf" id="hbw-QD-oDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
